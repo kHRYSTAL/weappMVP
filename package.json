@@ -1,0 +1,26 @@
+{
+  "name": "weappMVP",
+  "version": "1.0.0",
+  "description": "demo of wechat small app use MVP",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.2",
+    "sinon": "^4.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha Test/*.test.js --require babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "kHRYSTAL",
+  "license": "ISC"
+}
