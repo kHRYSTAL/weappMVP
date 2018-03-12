@@ -69,6 +69,10 @@ function navigateToMiniProgram(data) {
     wx.navigateToMiniProgram(data);
 }
 
+function canIUse(openType) {
+    wx.canIUse(openType);
+}
+
 module.exports = {
     navigateTo: navigateTo,
     redirectTo: redirectTo,
@@ -84,5 +88,6 @@ module.exports = {
     makePhoneCall: makePhoneCall,
     showShareMenu: showShareMenu,
     previewImage: previewImage,
-    navigateToMiniProgram: navigateToMiniProgram
+    navigateToMiniProgram: navigateToMiniProgram,
+    canIUse: canIUse
 };

@@ -18,7 +18,6 @@ function injectCommonView(instance) {
     instance.eventbus = eventbus;
     instance.alert = alert;
     instance.toast = toast;
-    instance.app = app;
     instance.page = page;
     instance.storage = storage;
     instance.tracker = new tracker();
