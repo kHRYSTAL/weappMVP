@@ -14,21 +14,8 @@ const formatNumber = n => {
     return n[1] ? n : '0' + n
 };
 
-function getUserInfo() {
-    return getApp().globalData.userInfo;
-}
 
-function setUserInfo(userInfo) {
-    getApp().globalData.userInfo = userInfo;
-}
-
-function getApplication() {
-    return getApp();
-}
 
 module.exports = {
     formatTime: formatTime,
-    getUserInfo: getUserInfo,
-    setUserInfo: setUserInfo,
-    getApplication: getApplication
 };

@@ -4,8 +4,6 @@ import indexService from './indexService';
 import factory from '../../common/mip/InteractorFactory';
 import extend from '../../lib/extend'
 
-//获取应用实例
-const app = getApp()
 let interactor;
 var pageConfig = {
     //--------view 接口----------

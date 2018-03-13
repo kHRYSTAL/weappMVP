@@ -2,8 +2,9 @@ import eventbus from '../notification/notification';
 import toast from '../view/toast';
 import alert from '../view/alert';
 import page from '../view/page';
-import storage from '../persistence/storage.js';
-import tracker from '../tracker/tracker.js';
+import storage from '../persistence/storage';
+import globalData from '../persistence/globalData';
+import tracker from '../tracker/tracker';
 
 function createInteractor(interactor, view, model) {
     var instance = new interactor();
@@ -20,6 +21,7 @@ function injectCommonView(instance) {
     instance.toast = toast;
     instance.page = page;
     instance.storage = storage;
+    instance.globalData = globalData;
     instance.tracker = new tracker();
 }
 

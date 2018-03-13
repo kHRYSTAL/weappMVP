@@ -16,7 +16,7 @@ function getShareInfo(ticket) {
     );
 }
 
-function getUserInfo() {
+function fetchUserInfo() {
     return new Promise((resolve, reject) => {
         wx.getUserInfo({success: resolve, fail: reject})
     })
@@ -71,7 +71,7 @@ function addPhoneContact(params) {
 
 module.exports = {
     login,
-    getUserInfo,
+    fetchUserInfo,
     setStorage,
     getStorage,
     getLocation,
